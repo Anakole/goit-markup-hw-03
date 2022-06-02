@@ -53,6 +53,11 @@ body {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*--------------COLORS-------------*/
 :root {
   --accent-color: #2196f3;
@@ -65,6 +70,7 @@ body {
   --text-color: #757575;
   --logo-color: #000000;
   --border-color: #ececec;
+  --border-second-color: #eeeeee;
 }
 
 /*--------------HEADER-------------*/
@@ -186,11 +192,6 @@ body {
 
 /*--------------ABOUT-------------*/
 
-.about {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .about-list {
   display: flex;
   justify-content: space-between;
@@ -229,7 +230,7 @@ body {
 /*--------------WORK-------------*/
 
 .work {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .work-top-title {
@@ -249,8 +250,6 @@ body {
 /*--------------TEAM-------------*/
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--light-backgound);
 }
 
@@ -315,6 +314,11 @@ body {
 .footer-address {
   margin-top: 20px;
 }
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-link {
   font-style: normal;
   font-size: 14px;
@@ -336,8 +340,7 @@ body {
 .portfolio-sorting-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-sorting-item:not(:last-child) {
@@ -372,7 +375,6 @@ body {
 .portfolio-img-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
   margin-left: -30px;
   margin-bottom: -30px;
 }
@@ -387,13 +389,16 @@ body {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid var(--border-second-color);
+  border-right: 1px solid var(--border-second-color);
+  border-bottom: 1px solid var(--border-second-color);
 }
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
   color: var(--title-color);
 }
 
